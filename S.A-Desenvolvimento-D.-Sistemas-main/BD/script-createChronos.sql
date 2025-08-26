@@ -1,4 +1,5 @@
-
+CREATE DATABASE chronos;
+USE chronos;
 
 
 
