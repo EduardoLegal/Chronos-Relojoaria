@@ -58,6 +58,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 echo json_encode(["success" => true, "tipo" => "admin"]);
                 exit;
 
+            }else{
+                throw new Exception("Senha incorreta");
             }
         }
         
@@ -78,5 +80,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo json_encode(["success" => false, "message" => "Método não permitido."]);
 }
 exit;
+
 
 ?>
